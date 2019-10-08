@@ -9,7 +9,7 @@ try:
 	from numpy import dot
 	from numpy.linalg import norm
 except:
-	print "Error: Requires numpy from http://www.scipy.org/. Have you installed scipy?"
+	print ("Error: Requires numpy from http://www.scipy.org/. Have you installed scipy?")
 	sys.exit() 
 
 class VectorSpace:
