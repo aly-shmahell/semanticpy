@@ -1,5 +1,5 @@
 import os
-from porter_stemmer import PorterStemmer
+from semanticpy.porter_stemmer import PorterStemmer
 import os
 
 class Parser:
