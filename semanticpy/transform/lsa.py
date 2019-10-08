@@ -1,6 +1,6 @@
 from scipy import linalg,dot
 
-from transform import Transform
+from semanticpy.transform.transform import Transform
 
 class LSA(Transform):
 	""" Latent Semantic Analysis(LSA).

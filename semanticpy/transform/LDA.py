@@ -1,5 +1,5 @@
 from semanticpy.transform.transform import Transform
-from vendor.onlineldavb.onlineldavb import OnlineLDA
+from semanticpy.vendor.onlineldavb.onlineldavb import OnlineLDA
 
 class LDA(Transform):
 	NUMBER_OF_TOPICS = 100

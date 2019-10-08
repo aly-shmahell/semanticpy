@@ -9,10 +9,10 @@ class MatrixFormatter:
 
         rows,cols = self.matrix.shape
 
-        for row in xrange(0,rows):
+        for row in range(0,rows):
             out += "["
 
-            for col in xrange(0,cols):
+            for col in range(0,cols):
                 out += "%+0.2f "%self.matrix[row][col]
             out += "]\n"
 
