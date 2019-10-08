@@ -1,5 +1,6 @@
 from math import *
 from semanticpy.transform.transform import Transform
+from functools import reduce
 
 class TFIDF(Transform):
 
