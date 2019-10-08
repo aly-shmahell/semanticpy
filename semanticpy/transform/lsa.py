@@ -22,7 +22,7 @@ class LSA(Transform):
 			u,sigma,vt = linalg.svd(self.matrix)
 
 			#Dimension reduction, build SIGMA'
-			for index in xrange(rows - dimensions, rows):
+			for index in range(rows - dimensions, rows):
 				sigma[index] = 0
 
 			#Reconstruct MATRIX'
@@ -31,4 +31,4 @@ class LSA(Transform):
 			return transformed_matrix
 
 		else:
-			print "dimension reduction cannot be greater than %s" % rows
+			print ("dimension reduction cannot be greater than %s" % rows)

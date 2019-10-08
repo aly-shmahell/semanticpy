@@ -21,12 +21,12 @@ class TFIDF(Transform):
 		rows,cols = self.matrix.shape
 		transformed_matrix = self.matrix.copy()
 
-		for row in xrange(0, rows): #For each document
+		for row in range(0, rows): #For each document
 
 			word_total = reduce(lambda x, y: x+y, self.matrix[row] )
 			word_total = float(word_total)
 
-			for col in xrange(0, cols): #For each term
+			for col in range(0, cols): #For each term
 				transformed_matrix[row,col] = float(transformed_matrix[row,col])
 
 				if transformed_matrix[row][col] != 0:
@@ -48,7 +48,7 @@ class TFIDF(Transform):
 
 		rows, cols = self.matrix.shape
 
-		for n in xrange(0,rows):
+		for n in range(0,rows):
 			if self.matrix[n][col] > 0: #Term appears in document
 				term_document_occurrences +=1
 		return term_document_occurrences
