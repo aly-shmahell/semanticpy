@@ -1,7 +1,7 @@
 from semanticpy.parser import Parser
 from semanticpy.transform.lsa import LSA
 from semanticpy.transform.tfidf import TFIDF
-
+from functools import reduce
 import sys
 
 
